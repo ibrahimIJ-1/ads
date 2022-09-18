@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+            integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+            crossorigin="anonymous"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+            integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Ad Page</title>
+    </head>
+    <body>
+        <header>
+            <nav class="shadow-sm mb-2">
+                <div class="row m-2 justify-content-center align-items-center">
+                    <div class="col-6">
+                        <a class="text-black-50">
+                            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-6">اللوجو</div>
+                </div>
+            </nav>
+        </header>
+
+        <div
+            class="mx-4 mt-0 mx-lg-4 mt-lg-0 px-3 py-2 shadow-sm background-grey border border-1 border-secondary rounded-3 rounded"
+        >
+            <div class="row">
+                <div
+                    class="col-12 text-center mb-4 border-bottom border-1 border-secondary pb-2"
+                >
+                    <h4 class="text-blue text-center">إنشاء إعلان جديد</h4>
+                </div>
+                <div class="col-12">
+                    <label for="name-div" class="form-label"
+                        >القسم <span class="text-danger">*</span></label
+                    >
+                    <div
+                        class="input-group mb-3 border border-1 border-secondary rounded-2 rounded"
+                        id="name-div"
+                    >
+                        <select
+                            name="gender"
+                            id="gender"
+                            class="form-select text-secondary"
+                        >
+                            <option value="" disabled selected>
+                                اختر القسم المناسب
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="name-div" class="form-label"
+                        >الصنف <span class="text-danger">*</span></label
+                    >
+                    <div
+                        class="input-group mb-3 border border-1 border-secondary rounded-2 rounded"
+                        id="name-div"
+                    >
+                        <select
+                            name="gender"
+                            id="gender"
+                            class="form-select text-secondary"
+                        >
+                            <option value="" disabled selected>
+                                اختر الصنف المناسب
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="name-div" class="form-label"
+                        >تصنيف آخر <span class="text-danger">*</span></label
+                    >
+                    <div
+                        class="input-group mb-3 border border-1 border-secondary rounded-2 rounded"
+                        id="name-div"
+                    >
+                        <select
+                            name="gender"
+                            id="gender"
+                            class="form-select text-secondary"
+                        >
+                            <option value="" disabled selected>
+                                اختر صنفاً آخر
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="name-div" class="form-label"
+                        >المدينة <span class="text-danger">*</span></label
+                    >
+                    <div
+                        class="input-group mb-3 border border-1 border-secondary rounded-2 rounded"
+                        id="name-div"
+                    >
+                        <select
+                            name="gender"
+                            id="gender"
+                            class="form-select text-secondary"
+                        >
+                            <option value="" disabled selected>
+                                اختر مدينتك
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="name-div" class="form-label"
+                        ><span class="text-danger"
+                            ><input type="checkbox"
+                        /></span>
+                        المنطقة أو المديرية
+                    </label>
+                    <div
+                        class="input-group mb-3 border border-1 border-secondary rounded-2 rounded"
+                        id="name-div"
+                    >
+                        <input
+                            name="gender"
+                            id="gender"
+                            class="form-control text-secondary"
+                            placeholder="المنطقة أو المديرية (اختياري)"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="name-div" class="form-label"></label>
+                        عنوان الاعلان <span class="text-danger">*</span>
+                    </label>
+                    <div
+                        class="input-group mb-3 border border-1 border-secondary rounded-2 rounded"
+                        id="name-div"
+                    >
+                        <input
+                            name="gender"
+                            id="gender"
+                            class="form-control text-secondary"
+                            placeholder="اكتب عنوانا لاعلانك"
+                        />
+                    </div>
+                    <p class="text-end">40/0</p>
+                </div>
+
+                <div class="col-12">
+                    <label for="name-div" class="form-label"></label>
+                        وصف الاعلان <span class="text-danger">*</span>
+                    </label>
+                    <div
+                        class="input-group mb-3 border border-1 border-secondary rounded-2 rounded"
+                        id="name-div"
+                    >
+                        <textarea
+                            name="gender"
+                            id="gender"
+                            class="form-control text-secondary"
+                            placeholder="اكتب وصفا لاعلانك"
+                        ></textarea>
+                    </div>
+                    <p class="text-end">1000/0</p>
+                </div>
+                <div class="col-12">
+                    <label for="name-div" class="form-label"
+                        ><span class="text-danger"
+                            ><input type="checkbox"
+                        /></span>
+                        إضافة مواصفات
+                    </label>
+                    <div
+                        class="row align-items-center mx-1"
+                        id="name-div"
+                    >
+                       <div class="col-8 d-flex align-items-end p-0 mb-3 border border-1 border-secondary rounded-2 rounded">
+                        <input
+                        name="gender"
+                        id="gender"
+                        class="form-control text-secondary"
+                        placeholder=" اضف"
+                    />
+                       </div>
+                        <div class="col-2  d-flex align-items-center">
+                            <button class="rounded-circle backgroud-light_blue border-0 h5 text-secondary"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="col-2  d-flex align-items-center">
+                            <button class="rounded-circle backgroud-light_blue border-0 h5 text-danger"><i class="fa fa-multiply"></i></button>
+                        </div>
+                    </div>
+                    <div
+                    class="row align-items-center mx-1"
+                    id="name-div"
+                >
+                   <div class="col-8 d-flex align-items-end p-0 mb-3 border border-1 border-secondary rounded-2 rounded">
+                    <input
+                    name="gender"
+                    id="gender"
+                    class="form-control text-secondary"
+                    placeholder=" اضف"
+                />
+                   </div>
+                    <div class="col-2  d-flex align-items-center">
+                        <button class="rounded-circle backgroud-light_blue border-0 h5 text-secondary"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div class="col-2  d-flex align-items-center">
+                        <button class="rounded-circle backgroud-light_blue border-0 h5 text-danger"><i class="fa fa-multiply"></i></button>
+                    </div>
+                </div>
+                <div
+                class="row align-items-center mx-1"
+                id="name-div"
+            >
+               <div class="col-8 d-flex align-items-end p-0 mb-3 border border-1 border-secondary rounded-2 rounded">
+                <input
+                name="gender"
+                id="gender"
+                class="form-control text-secondary"
+                placeholder=" اضف"
+            />
+               </div>
+                <div class="col-2  d-flex align-items-center">
+                    <button class="rounded-circle backgroud-light_blue border-0 h5 text-secondary"><i class="fa fa-plus"></i></button>
+                </div>
+                <div class="col-2  d-flex align-items-center">
+                    <button class="rounded-circle backgroud-light_blue border-0 h5 text-danger"><i class="fa fa-multiply"></i></button>
+                </div>
+            </div>
+                </div>
+
+
+                <div class="col-12">
+                    <label for="name-div" class="form-label"
+                        ><span class="text-danger"
+                            ><input type="checkbox"
+                        /></span>
+                        إضافة سعر
+                    </label>
+                    <div
+                        class="input-group mb-3 border border-1 border-secondary rounded-2 rounded"
+                        id="name-div"
+                    >
+                        <input
+                            name="gender"
+                            id="gender"
+                            class="form-control text-secondary"
+                            placeholder="ادخل السعر"
+                        />
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="name-div" class="form-label h5 text-secondary"
+                        > وسيلة التواصل<span class="text-danger"
+                            >*</span>
+
+                    </label>
+                    <label class="form-control-radio-text">
+                        <input type="radio" name="radio" class="radioCustom"/>
+                        إظهار رقم جوالك
+                      </label>
+
+                      <label class="form-control-radio-text">
+                        <input type="radio" name="radio" class="radioCustom"/>
+                        إضافة رقم جوال جديد
+                      </label>
+
+                      <label class="form-control-radio-text text-disabled mb-3">
+                        <input type="radio" name="radio1" checked disabled class="radioCustom "/>
+                        التواصل عبر رسائل خاصة داخل الموقع
+                      </label>
+
+                      <div class="input-group mb-3 border border-1 border-secondary rounded-2 rounded">
+                        <input type="text" class="form-control text-end" aria-label="Text input with dropdown button" dir="ltr">
+
+                        <button class="btn border-0 dropdown-toggle text-end px-1" dir="ltr" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span><img src="./assets/images/flags/syria.png" alt="" class="flag"></span> +964 </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12 mb-3 pb-3 border-bottom border-1 border-secondary">
+                        <button
+                            type="button"
+                            class="btn background-blue border-0 w-100 text-white"
+                        >ارسال رمز التحقق</button>
+                        </div>
+                        <div class="col-12">
+                            <label for="name-div" class="form-label h5"
+                                >
+                               إضافة صور للإعلان
+                               <span class="text-danger h6"
+                               >أضف 3 صور فقط</span>
+                            </label>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <small class="text-center text-danger">
+                                يمكتك اضافة 7 صور اخرى من داخل الاعلان بعد نشره
+                            </small>
+                        </div>
+
+                        <div class="col-12 mb-1">
+                            <div class="row justify-content-center">
+                                <div class="col-4 d-flex flex-column align-items-center">
+                                    <img src="./assets/images/backgrounds/background1.jpg" class="rounded rounded-2 ad-img border border-1 border-secondary mb-2" alt="">
+                                    <input type="radio" name="image_choose" class="radioCustom">
+                                </div>
+                                <div class="col-4 d-flex flex-column align-items-center">
+                                    <img src="./assets/images/backgrounds/background1.jpg" class="rounded rounded-2 ad-img border border-1 border-secondary mb-2" alt="">
+                                    <input type="radio" name="image_choose" class="radioCustom" checked>
+                                </div>
+                                <div class="col-4 d-flex flex-column align-items-center">
+                                    <img src="./assets/images/backgrounds/background1.jpg" class="rounded rounded-2 ad-img border border-1 border-secondary mb-2" alt="">
+                                    <input type="radio" name="image_choose" class="radioCustom">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-2 text-center">
+                            <h5 class="text-center text-dark">
+                                إختر الصورة الرئيسية
+                            </h5>
+                        </div>
+                        <div class="col-12 mb-1">
+                            <button
+                                type="button"
+                                class="btn background-blue border-0 w-100 text-white"
+                            >نشر الإعلان</button>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://kit.fontawesome.com/ef5b6bee95.js"
+        crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/owl.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</html>
