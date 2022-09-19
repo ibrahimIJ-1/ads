@@ -1,411 +1,385 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
-            integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
-            crossorigin="anonymous"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
-            integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Ad Page</title>
-    </head>
-    <body>
-        <header>
-            <nav class="shadow-sm mb-2">
-                <div class="row m-2 justify-content-center align-items-center">
-                    <div class="col-6">
-                        <a class="text-black-50">
-                            <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="col-6">اللوجو</div>
-                </div>
-            </nav>
-        </header>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+      integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Ad Page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="shadow-sm mb-2">
+        <div class="row m-2 justify-content-center align-items-center">
+          <div class="col-6">
+            <a class="text-black-50">
+              <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-6">اللوجو</div>
+        </div>
+      </nav>
+    </header>
 
+    <div class="m-4 m-lg-4 px-2 py-2 shadow-sm ad-owner_card rounded rounded-3">
+      <div class="row justify-content-evenly">
+        <div class="col-5 p-0 d-flex justify-content-center">
+          <button class="btn rounded rounded-2 profile-owner_button mb-2">
+            <span class="mx-1"
+              ><i
+                class="fa-sharp fa-solid text-blue fa-envelope align-self-center"
+              ></i></span
+            >مراسلة
+          </button>
+        </div>
+        <div class="col-2 p-0 d-flex justify-content-center">
+          <img
+            src="./assets/images/icons/male.png"
+            class="ad-owner_img rounded rounded-circle mx-2"
+            alt=""
+          />
+        </div>
+        <div class="col-5 p-0 d-flex justify-content-center">
+          <button
+            class="btn rounded rounded-2 profile-owner_button mb-2"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#adRate"
+            aria-controls="adRate"
+          >
+            <span class="mx-0"
+              ><i class="fa-sharp fa-solid fa-plus align-self-center"></i></span
+            >اضافة تقييم
+          </button>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
         <div
-            class="m-4 m-lg-4 px-2 py-2 shadow-sm ad-owner_card rounded rounded-3"
+          class="col-12 d-flex justify-content-lg-start justify-content-center"
         >
-            <div class="row justify-content-evenly">
-                <div class="col-5 p-0 d-flex justify-content-center">
-                    <button
-                        class="btn rounded rounded-2 profile-owner_button mb-2"
-                    >
-                        <span class="mx-1"
-                            ><i
-                                class="fa-sharp fa-solid text-blue fa-envelope align-self-center"
-                            ></i></span
-                        >مراسلة
-                    </button>
-                </div>
-                <div class="col-2 p-0 d-flex justify-content-center">
-                    <img
-                        src="./assets/images/icons/male.png"
-                        class="ad-owner_img rounded rounded-circle mx-2"
-                        alt=""
-                    />
-                </div>
-                <div class="col-5 p-0 d-flex justify-content-center">
-                    <button
-                        class="btn rounded rounded-2 profile-owner_button mb-2"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#adRate"
-                        aria-controls="adRate"
-                    >
-                        <span class="mx-0"
-                            ><i
-                                class="fa-sharp fa-solid fa-plus align-self-center"
-                            ></i></span
-                        >اضافة تقييم
-                    </button>
-                </div>
-            </div>
+          <h2
+            class="account-owner_name text-blue d-flex justify-content-center align-items-center"
+          >
+            ابو احمد
+            <span
+              ><img
+                src="./assets/images/icons/img_20220905_024032639.png"
+                class="ad-owner_badge mx-2"
+                alt=""
+            /></span>
+          </h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-9">
+          <p class="text-end">آخر ظهور قبل 3 ساعات</p>
+          <p class="text-start text-secondary">عدن - انضم قبل 4 أشهر</p>
+        </div>
+        <div class="col-3">
+          <img
+            src="./assets/images/icons/golden level.png"
+            alt=""
+            class="ad-owner_badge w-100 h-75"
+          />
+        </div>
+      </div>
 
-            <div class="row justify-content-center">
+      <div class="row justify-content-between mx-1">
+        <div class="col-6 d-flex justify-content-start p-0">
+          <a
+            href="./account_page.html"
+            class="btn rounded background-blue text-white rounded-2 profile-owner_button mb-2"
+          >
+            8 - اعلانات
+          </a>
+        </div>
+
+        <div class="col-6 d-flex justify-content-end p-0">
+          <a
+            href="./rate.html"
+            class="btn rounded rounded-2 profile-owner_button mb-2 p-0"
+            style="line-height: normal"
+          >
+            <span class="mx-0"
+              ><i class="fa-sharp fa-solid align-self-center"></i
+            ></span>
+            9 - تقييمات
+            <span class="mx-0">
+              <i
+                class="fa-sharp fa-solid fa-thumbs-up text-blue align-self-center"
+              ></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-4 px-0">
+      <div class="desc-div rounded rounded-3 shadow-lg p-3">
+        <p class="text-center text-secondary">
+          تتوفر لدينا جميع الأنواع و الأصناف مع خدمة التوصيل. زورونا في الموقع
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="row justify-content-center shadow-sm"
+      style="padding-inline: 2.1rem"
+    >
+      <div class="col-lg-4 my-1 border border-1 rounded-1">
+        <div class="row align-items-start">
+          <div class="col-3 p-0">
+            <img
+              src="./assets/images/backgrounds/background1.jpg"
+              alt=""
+              class="ad-img"
+            />
+          </div>
+          <div class="col-9 flex-column d-flex align-items-stretch mt-2">
+            <div class="div">
+              <h4 class="ad-title">اسم الإعلان بالتفصيل</h4>
+            </div>
+            <div class="row align-items-end justify-content-start mt-5 gx-4">
+              <div class="col-5 px-0">
                 <div
-                    class="col-12 d-flex justify-content-lg-start justify-content-center"
+                  class="d-flex flex-row align-items-center justify-content-start"
                 >
-                    <h2
-                        class="account-owner_name text-blue d-flex justify-content-center align-items-center"
-                    >
-                        ابو احمد
-                        <span
-                            ><img
-                                src="./assets/images/icons/img_20220905_024032639.png"
-                                class="ad-owner_badge mx-2"
-                                alt=""
-                        /></span>
-                    </h2>
+                  <img
+                    src="./assets/images/icons/img_20220905_020657823.png"
+                    alt=""
+                    class="ad-location"
+                  />
+                  <h6>عدن</h6>
                 </div>
+              </div>
+              <div class="col-7 px-0">
+                <div class="d-flex flex-row align-items-center">
+                  <img
+                    src="./assets/images/icons/img_20220905_024311291.png"
+                    alt=""
+                    class="ad-location"
+                  />
+                  <h6 class="text-secondary">قبل 4 ساعات</h6>
+                </div>
+              </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-9">
-                    <p class="text-end">آخر ظهور قبل 3 ساعات</p>
-                    <p class="text-start text-secondary">
-                        عدن - انضم قبل 4 أشهر
-                    </p>
-                </div>
-                <div class="col-3">
-                    <img
-                        src="./assets/images/icons/golden level.png"
-                        alt=""
-                        class="ad-owner_badge w-100 h-75"
-                    />
-                </div>
-            </div>
-
-            <div class="row justify-content-between mx-1">
-                <div class="col-6 d-flex justify-content-start p-0">
-                    <a
-                        href="./account_page.html"
-                        class="btn rounded background-blue text-white rounded-2 profile-owner_button mb-2"
-                    >
-                        8 - اعلانات
-                    </a>
-                </div>
-
-                <div class="col-6 d-flex justify-content-end p-0">
-                    <a
-                        href="./rate.html"
-                        class="btn rounded rounded-2 profile-owner_button mb-2 p-0"
-                        style="line-height: normal"
-                    >
-                        <span class="mx-0"
-                            ><i class="fa-sharp fa-solid align-self-center"></i
-                        ></span>
-                        9 - تقييمات
-                        <span class="mx-0">
-                            <i
-                                class="fa-sharp fa-solid fa-thumbs-up text-blue align-self-center"
-                            ></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <div class="m-4 px-3">
-            <div class="desc-div rounded rounded-3 shadow-sm p-3">
-                <p class="text-center text-secondary">
-                    تتوفر لدينا جميع الأنواع و الأصناف مع خدمة التوصيل. زورونا
-                    في الموقع
-                </p>
+      </div>
+      <div class="col-lg-4 my-1 border border-1 rounded-1">
+        <div class="row align-items-start">
+          <div class="col-3 p-0">
+            <img
+              src="./assets/images/backgrounds/background1.jpg"
+              alt=""
+              class="ad-img"
+            />
+          </div>
+          <div class="col-9 flex-column d-flex align-items-stretch mt-2">
+            <div class="div">
+              <h4 class="ad-title">اسم الإعلان بالتفصيل</h4>
             </div>
+            <div class="row align-items-end justify-content-start mt-5 gx-4">
+              <div class="col-5 px-0">
+                <div
+                  class="d-flex flex-row align-items-center justify-content-start"
+                >
+                  <img
+                    src="./assets/images/icons/img_20220905_020657823.png"
+                    alt=""
+                    class="ad-location"
+                  />
+                  <h6>عدن</h6>
+                </div>
+              </div>
+              <div class="col-7 px-0">
+                <div class="d-flex flex-row align-items-center">
+                  <img
+                    src="./assets/images/icons/img_20220905_024311291.png"
+                    alt=""
+                    class="ad-location"
+                  />
+                  <h6 class="text-secondary">قبل 4 ساعات</h6>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="row justify-content-center shadow-sm">
-            <div class="col-lg-4 my-1 border border-1 rounded-1">
-                <div class="row align-items-start">
-                    <div class="col-3 p-0">
-                        <img
-                            src="./assets/images/backgrounds/background1.jpg"
-                            alt=""
-                            class="ad-img"
-                        />
-                    </div>
-                    <div
-                        class="col-9 flex-column d-flex align-items-stretch mt-2"
-                    >
-                        <div class="div">
-                            <h4 class="ad-title">اسم الإعلان بالتفصيل</h4>
-                        </div>
-                        <div
-                            class="row align-items-end justify-content-start mt-5"
-                        >
-                            <div class="col-6">
-                                <div
-                                    class="d-flex flex-row align-items-center justify-content-start"
-                                >
-                                    <img
-                                        src="./assets/images/icons/img_20220905_020657823.png"
-                                        alt=""
-                                        class="ad-location"
-                                    />
-                                    <h6>عدن</h6>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex flex-row align-items-center">
-                                    <img
-                                        src="./assets/images/icons/img_20220905_024311291.png"
-                                        alt=""
-                                        class="ad-location"
-                                    />
-                                    <h6 class="text-secondary">قبل 4 ساعات</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="col-lg-4 my-1 border border-1 rounded-1">
+        <div class="row align-items-start">
+          <div class="col-3 p-0">
+            <img
+              src="./assets/images/backgrounds/background1.jpg"
+              alt=""
+              class="ad-img"
+            />
+          </div>
+          <div class="col-9 flex-column d-flex align-items-stretch mt-2">
+            <div class="div">
+              <h4 class="ad-title">اسم الإعلان بالتفصيل</h4>
             </div>
-            <div class="col-lg-4 my-1 border border-1 rounded-1">
-                <div class="row align-items-start">
-                    <div class="col-3 p-0">
-                        <img
-                            src="./assets/images/backgrounds/background1.jpg"
-                            alt=""
-                            class="ad-img"
-                        />
-                    </div>
-                    <div
-                        class="col-9 flex-column d-flex align-items-stretch mt-2"
-                    >
-                        <div class="div">
-                            <h4 class="ad-title">اسم الإعلان بالتفصيل</h4>
-                        </div>
-                        <div
-                            class="row align-items-end justify-content-start mt-5"
-                        >
-                            <div class="col-6">
-                                <div
-                                    class="d-flex flex-row align-items-center justify-content-start"
-                                >
-                                    <img
-                                        src="./assets/images/icons/img_20220905_020657823.png"
-                                        alt=""
-                                        class="ad-location"
-                                    />
-                                    <h6>عدن</h6>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex flex-row align-items-center">
-                                    <img
-                                        src="./assets/images/icons/img_20220905_024311291.png"
-                                        alt=""
-                                        class="ad-location"
-                                    />
-                                    <h6 class="text-secondary">قبل 4 ساعات</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row align-items-end justify-content-start mt-5 gx-4">
+              <div class="col-5 px-0">
+                <div
+                  class="d-flex flex-row align-items-center justify-content-start"
+                >
+                  <img
+                    src="./assets/images/icons/img_20220905_020657823.png"
+                    alt=""
+                    class="ad-location"
+                  />
+                  <h6>عدن</h6>
                 </div>
-            </div>
-            <div class="col-lg-4 my-1 border border-1 rounded-1">
-                <div class="row align-items-start">
-                    <div class="col-3 p-0">
-                        <img
-                            src="./assets/images/backgrounds/background1.jpg"
-                            alt=""
-                            class="ad-img"
-                        />
-                    </div>
-                    <div
-                        class="col-9 flex-column d-flex align-items-stretch mt-2"
-                    >
-                        <div class="div">
-                            <h4 class="ad-title">اسم الإعلان بالتفصيل</h4>
-                        </div>
-                        <div
-                            class="row align-items-end justify-content-start mt-5"
-                        >
-                            <div class="col-6">
-                                <div
-                                    class="d-flex flex-row align-items-center justify-content-start"
-                                >
-                                    <img
-                                        src="./assets/images/icons/img_20220905_020657823.png"
-                                        alt=""
-                                        class="ad-location"
-                                    />
-                                    <h6>عدن</h6>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex flex-row align-items-center">
-                                    <img
-                                        src="./assets/images/icons/img_20220905_024311291.png"
-                                        alt=""
-                                        class="ad-location"
-                                    />
-                                    <h6 class="text-secondary">قبل 4 ساعات</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-7 px-0">
+                <div class="d-flex flex-row align-items-center">
+                  <img
+                    src="./assets/images/icons/img_20220905_024311291.png"
+                    alt=""
+                    class="ad-location"
+                  />
+                  <h6 class="text-secondary">قبل 4 ساعات</h6>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div
-            class="offcanvas offcanvas-bottom rounded-bottom rounded-3"
-            tabindex="-1"
-            id="adRate"
-            aria-labelledby="offcanvasBottomLabel"
+    <div
+      class="offcanvas offcanvas-bottom rounded-bottom rounded-3"
+      tabindex="-1"
+      id="adRate"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h4
+          class="offcanvas-title text-center w-100 text-blue fa-bold"
+          id="offcanvasBottomLabel"
         >
-            <div class="offcanvas-header">
-                <h4
-                    class="offcanvas-title text-center w-100 text-blue fa-bold"
-                    id="offcanvasBottomLabel"
-                >
-                    اضافة تقييم
-                </h4>
-                <button
-                    type="button"
-                    class="btn-close text-reset rounded rounded-circle bg-secondary text-center"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                ></button>
+          اضافة تقييم
+        </h4>
+        <button
+          type="button"
+          class="btn-close text-reset rounded rounded-circle bg-secondary text-center"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body border-top border-1 border-secondary">
+        <form action="" method="post" class="form">
+          <div class="row">
+            <div class="col-1">
+              <label class="check-container">
+                <input type="checkbox" checked="checked" /><span
+                  class="checkmark"
+                ></span>
+              </label>
             </div>
-            <div class="offcanvas-body border-top border-1 border-secondary">
-                <form action="" method="post" class="form">
-                    <div class="row">
-                        <div class="col-1">
-                            <label class="check-container">
-                                <input type="checkbox" checked="checked" /><span
-                                    class="checkmark"
-                                ></span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <p>لقد تعاملت مع أبو عبدالله من قبل</p>
-                        </div>
-                    </div>
+            <div class="col">
+              <p>لقد تعاملت مع أبو عبدالله من قبل</p>
+            </div>
+          </div>
 
-                    <div class="row border-top border-1 border-dark py-2 pt-5">
-                        <div class="col-1">
-                            <label class="check-container">
-                                <input
-                                    type="radio"
-                                    checked="checked"
-                                    name="recomend"
-                                /><span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-1">
-                                    <i
-                                        class="fa fa-thumbs-up text-blue h3 mx-1"
-                                    ></i>
-                                </div>
-                                <div class="col-5 mx-2 text-blue">
-                                    <span>نعم أنصح به</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="row border-top border-1 border-dark py-2 pt-5">
+            <div class="col-1">
+              <label class="check-container">
+                <input type="radio" checked="checked" name="recomend" /><span
+                  class="checkmark"
+                ></span>
+              </label>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-1">
+                  <i class="fa fa-thumbs-up text-blue h3 mx-1"></i>
+                </div>
+                <div class="col-5 mx-2 text-blue">
+                  <span>نعم أنصح به</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                    <div class="row">
-                        <div class="col-1">
-                            <label class="check-container">
-                                <input type="radio" name="recomend" /><span
-                                    class="checkmark"
-                                ></span>
-                            </label>
-                        </div>
+          <div class="row">
+            <div class="col-1">
+              <label class="check-container">
+                <input type="radio" name="recomend" /><span
+                  class="checkmark"
+                ></span>
+              </label>
+            </div>
 
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-1">
-                                    <i
-                                        class="fa fa-thumbs-up h3 mx-1"
-                                        style="color: red"
-                                    ></i>
-                                </div>
-                                <div class="col-5 mx-2" style="color: red">
-                                    <span>لا أنصح به</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-1">
+                  <i class="fa fa-thumbs-up h3 mx-1" style="color: red"></i>
+                </div>
+                <div class="col-5 mx-2" style="color: red">
+                  <span>لا أنصح به</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                    <div class="border-top border-1 border-dark p-2 mt-5">
-                        <textarea
-                            name="reason_text"
-                            id="reason_text"
-                            rows="5"
-                            class="form-control text-secondary"
-                        >
+          <div class="border-top border-1 border-dark p-2 mt-5">
+            <textarea
+              name="reason_text"
+              id="reason_text"
+              rows="5"
+              class="form-control text-secondary"
+            >
 اكتب تقييمك هنا</textarea
-                        >
-                    </div>
-                    <div class="my-2" id="range">
-                        <p class="text-dark text-end">250/0</p>
-                    </div>
+            >
+          </div>
+          <div class="my-2" id="range">
+            <p class="text-dark text-end">250/0</p>
+          </div>
 
-                    <div class="mb-2">
-                        <input
-                            type="submit"
-                            value="إرسال التقييم"
-                            class="form-control background-blue text-white text-center"
-                        />
-                    </div>
-                </form>
-            </div>
-        </div>
-    </body>
+          <div class="mb-2">
+            <input
+              type="submit"
+              value="إرسال التقييم"
+              class="form-control background-blue text-white text-center"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 
-    <script
-        src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-        crossorigin="anonymous"
-    ></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"
-    ></script>
-    <script
-        src="https://kit.fontawesome.com/ef5b6bee95.js"
-        crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/owl.js"></script>
-    <script src="./assets/js/scripts.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/ef5b6bee95.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/owl.js"></script>
+  <script src="./assets/js/scripts.js"></script>
 </html>
