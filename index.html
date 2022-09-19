@@ -30,19 +30,21 @@
     <title>Advertisment</title>
   </head>
   <body>
-    <header>
-      <nav class="row navbar navbar-expand-sm navbar-dark">
+    <header class="mb-1">
+      <nav class="row navbar navbar-expand-sm">
         <div class="container-fluid">
           <button
-            class="navbar-toggler d-block border-none"
+            class="navbar-toggler d-block border-none text-blue"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"
           >
-            <span class="navbar-toggler-icon"></span>المزيد
+            <span class="navbar-toggler-icon text-blue"
+              ><i class="fa fa-bars text-light_blue" style="font-size: 40px"></i
+            ></span>
           </button>
-          <a class="navbar-brand d-none d-lg-block" href="./index.html"
+          <a class="navbar-brand d-lg-block text-blue" href="./index.html"
             >اللوجو</a
           >
           <div class="row justify-content-evenly" id="collapsibleNavbar">
@@ -65,31 +67,33 @@
                 >
               </li>
               <li class="d-flex flex-row">
-                <a class="nav-link" href="#"
-                  ><span class="box">
-                    <img
+                <a class="nav-link text-dark mx-2" href="#"
+                  ><div class="box d-flex flex-column align-items-center">
+                    <!-- <img
                       src="./assets/images/icons/envelope.svg"
                       alt=""
                       class="nav-img"
-                    />
+                    /> -->
+                    <i class="fa fa-envelope text-blue h2 text-end"></i>
                     <div id="msg-count">
                       <div>2</div>
                     </div>
-                  </span>
+                  </div>
                   الرسائل</a
                 >
 
-                <a class="nav-link" href="#"
-                  ><span class="box">
-                    <img
+                <a class="nav-link text-dark mx-2" href="#"
+                  ><div class="box d-flex flex-column align-items-center">
+                    <!-- <img
                       src="./assets/images/icons/Picsart_22-09-05_01-01-56-361.png"
                       alt=""
                       class="nav-img"
-                    />
-                    <div id="msg-count">
+                    /> -->
+                    <i class="fa far fa-bell text-blue h2 text-end"></i>
+                    <div id="msg-count2">
                       <div>2</div>
                     </div>
-                  </span>
+                  </div>
                   الإشعارات</a
                 >
               </li>
@@ -114,16 +118,16 @@
                             ></button>
                         </div> -->
       <div class="offcanvas-body p-0 w-100">
-        <div class="row m-0 align-items-center" style="background: #cdcdcd">
+        <div class="row m-0 align-items-center" style="background: #e6e8e5; font-weight: bolder;height: 5rem;">
           <div class="col-3">
             <img
               src="./assets/images/icons/male.png"
               alt=""
-              class="rounded menu-img"
+              class="rounded menu-img border-dark border-1 border rounded-circle"
             />
           </div>
           <div class="col-9">
-            <h4 class="align-self-center m-0 ad-title">مرحبا أبو يوسف</h4>
+            <h4 class="align-self-center m-0 ad-title" >مرحبا أبو يوسف</h4>
           </div>
         </div>
         <a href="./myaccount.html" class="text-decoration-none">
@@ -131,16 +135,12 @@
             class="row p-2 align-items-center justify-content-center border-1 border"
           >
             <div class="col-9 p-2">
-              <h4 class="align-self-center m-0 ad-title">الملف الشخصي</h4>
+              <h6 class="align-self-center m-0  text-dark">الملف الشخصي</h6>
             </div>
             <div class="col-1">
-              <h4 class="align-self-center m-0 ad-title">
-                <img
-                  src="./assets/images/icons/left-black.svg"
-                  alt=""
-                  class="menu-arrow"
-                />
-              </h4>
+              <h6 class="align-self-center m-0 ">
+                <i class="fa fas fa-chevron-left text-secondary"></i>
+              </h6>
             </div>
           </div>
         </a>
@@ -149,16 +149,26 @@
             class="row p-2 align-items-center justify-content-center border-1 border"
           >
             <div class="col-9 p-2">
-              <h4 class="align-self-center m-0 ad-title">انشاء اعلان جديد</h4>
+              <h6 class="align-self-center m-0 text-dark">انشاء اعلان جديد</h6>
             </div>
             <div class="col-1">
-              <h4 class="align-self-center m-0 ad-title">
-                <img
-                  src="./assets/images/icons/left-black.svg"
-                  alt=""
-                  class="menu-arrow"
-                />
-              </h4>
+              <h6 class="align-self-center m-0 ">
+                <i class="fa fas fa-chevron-left text-secondary"></i>
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a href="./myaccount.html" class="text-decoration-none text-dark">
+          <div
+            class="row p-2 align-items-center justify-content-center border-1 border"
+          >
+            <div class="col-9 p-2">
+              <h6 class="align-self-center m-0 text-dark">تعليمات الاستخدام</h6>
+            </div>
+            <div class="col-1">
+              <h6 class="align-self-center m-0 ">
+                <i class="fa fas fa-chevron-left text-secondary"></i>
+              </h6>
             </div>
           </div>
         </a>
@@ -167,16 +177,12 @@
             class="row p-2 align-items-center justify-content-center border-1 border"
           >
             <div class="col-9 p-2">
-              <h4 class="align-self-center m-0 ad-title">تعليمات الاستخدام</h4>
+              <h6 class="align-self-center m-0 text-dark">شارك رابط الموقع</h6>
             </div>
             <div class="col-1">
-              <h4 class="align-self-center m-0 ad-title">
-                <img
-                  src="./assets/images/icons/left-black.svg"
-                  alt=""
-                  class="menu-arrow"
-                />
-              </h4>
+              <h6 class="align-self-center m-0 ">
+                <i class="fa fas fa-chevron-left text-secondary"></i>
+              </h6>
             </div>
           </div>
         </a>
@@ -185,16 +191,12 @@
             class="row p-2 align-items-center justify-content-center border-1 border"
           >
             <div class="col-9 p-2">
-              <h4 class="align-self-center m-0 ad-title">شارك رابط الموقع</h4>
+              <h6 class="align-self-center m-0 text-dark">تواصل معنا</h6>
             </div>
             <div class="col-1">
-              <h4 class="align-self-center m-0 ad-title">
-                <img
-                  src="./assets/images/icons/left-black.svg"
-                  alt=""
-                  class="menu-arrow"
-                />
-              </h4>
+              <h6 class="align-self-center m-0 ">
+                <i class="fa fas fa-chevron-left text-secondary"></i>
+              </h6>
             </div>
           </div>
         </a>
@@ -203,34 +205,12 @@
             class="row p-2 align-items-center justify-content-center border-1 border"
           >
             <div class="col-9 p-2">
-              <h4 class="align-self-center m-0 ad-title">تواصل معنا</h4>
+              <h6 class="align-self-center m-0 text-dark">الشروط و الاحكام</h6>
             </div>
             <div class="col-1">
-              <h4 class="align-self-center m-0 ad-title">
-                <img
-                  src="./assets/images/icons/left-black.svg"
-                  alt=""
-                  class="menu-arrow"
-                />
-              </h4>
-            </div>
-          </div>
-        </a>
-        <a href="./myaccount.html" class="text-decoration-none">
-          <div
-            class="row p-2 align-items-center justify-content-center border-1 border"
-          >
-            <div class="col-9 p-2">
-              <h4 class="align-self-center m-0 ad-title">الشروط و الاحكام</h4>
-            </div>
-            <div class="col-1">
-              <h4 class="align-self-center m-0 ad-title">
-                <img
-                  src="./assets/images/icons/left-black.svg"
-                  alt=""
-                  class="menu-arrow"
-                />
-              </h4>
+              <h6 class="align-self-center m-0 ">
+                <i class="fa fas fa-chevron-left text-secondary"></i>
+              </h6>
             </div>
           </div>
         </a>
@@ -239,9 +219,9 @@
     <div class="row mb-3">
       <div class="col search-bar col-md-12 p-3">
         <form action="" method="post" class="form">
-          <div class="row justify-content-center align-items-center">
+          <div class="row justify-content-center align-items-center px-0 mx-0">
             <div class="offset-lg-2 col-lg-3 col-md-12 my-2 mx-0">
-              <div class="input-group flex-nowrap">
+              <div class="input-group flex-nowrap" style="height: 50px">
                 <span
                   class="input-group-text bg-white border-0 right"
                   id="addon-wrapping"
@@ -256,13 +236,29 @@
                   name="keyword"
                   placeholder="ابحث هنا عن أي شيء"
                   class="form-control border-0"
+                  style="
+                    padding-right: 0;
+                    padding-top: 0;
+                    font-size: 18px;
+                    font-weight: bold;
+                  "
                   aria-describedby="addon-wrapping"
                 />
               </div>
             </div>
-            <div class="col col-lg-2 col-md-6 col-sm-6">
-              <div class="input-group flex-nowrap">
-                <select name="city_id" class="form-control border-0">
+            <div
+              class="col col-lg-2 col-md-6 col-sm-6"
+              style="padding-left: 3px"
+            >
+              <div
+                class="input-group flex-nowrap"
+                style="height: 50px; font-size: 18px"
+              >
+                <select
+                  name="city_id"
+                  class="form-select border-0 text-secondary"
+                  style="font-size: 18px; font-weight: bold"
+                >
                   <option value="" selected disabled>كل المدن</option>
                 </select>
                 <span
@@ -276,9 +272,16 @@
                 /></span>
               </div>
             </div>
-            <div class="col col-lg-2 col-md-6 col-sm-6">
-              <div class="input-group flex-nowrap">
-                <select name="category_id" class="form-control border-0">
+            <div
+              class="col col-lg-2 col-md-6 col-sm-6"
+              style="padding-right: 3px"
+            >
+              <div class="input-group flex-nowrap" style="height: 50px">
+                <select
+                  name="category_id"
+                  class="form-select border-0 text-secondary"
+                  style="font-size: 18px; font-weight: bold"
+                >
                   <option value="" selected disabled>كل الأقسام</option>
                 </select>
                 <span
@@ -295,8 +298,11 @@
             <div
               class="col-lg-2 col-md-12 col-sm-12 mt-2 mt-lg-0 mt-sm-5 mt-md-5"
             >
-              <button class="btn btn-search w-100 text-center text-white">
-                <span class="" id="addon-wrapping"
+              <button
+                class="btn btn-search w-100 text-center text-white"
+                style="height: 50px; font-size: 18px; font-weight: bold"
+              >
+                <span class="" id="addon-wrapping" style="font-size: 18px"
                   ><i
                     class="fa-sharp fa-solid fa-magnifying-glass btn-search-icon"
                   ></i
@@ -323,7 +329,7 @@
       </div>
     </div>
 
-    <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center px-3">
       <div class="col-1 d-flex justify-content-start">
         <img
           src="./assets/images/icons/right.svg"
@@ -348,7 +354,7 @@
                 <div class="item">
                   <button
                     type="button"
-                    class="btn btn-labeled d-flex carousel-button justify-content-center active-button-category"
+                    class="btn btn-labeled d-flex carousel-button align-items-center justify-content-center active-button-category"
                   >
                     <span class="btn-label d-flex"
                       ><img
@@ -366,7 +372,7 @@
                 <div class="item">
                   <button
                     type="button"
-                    class="btn btn-labeled d-flex carousel-button justify-content-center"
+                    class="btn btn-labeled d-flex carousel-button align-items-center justify-content-center"
                   >
                     <span class="btn-label d-flex"
                       ><img
@@ -383,7 +389,7 @@
                 <div class="item">
                   <button
                     type="button"
-                    class="btn btn-labeled carousel-button d-flex justify-content-center"
+                    class="btn btn-labeled carousel-button d-flex align-items-center justify-content-center"
                   >
                     <span class="btn-label d-flex"
                       ><img
@@ -400,7 +406,7 @@
                 <div class="item">
                   <button
                     type="button"
-                    class="btn btn-labeled carousel-button d-flex justify-content-center"
+                    class="btn btn-labeled carousel-button d-flex align-items-center justify-content-center"
                   >
                     <span class="btn-label d-flex"
                       ><img
@@ -417,7 +423,7 @@
                 <div class="item">
                   <button
                     type="button"
-                    class="btn btn-labeled carousel-button d-flex justify-content-center"
+                    class="btn btn-labeled carousel-button d-flex align-items-center justify-content-center"
                   >
                     <span class="btn-label d-flex"
                       ><img
@@ -444,7 +450,8 @@
       </div>
     </div>
 
-    <div class="row justify-content-center mb-5">
+    <div class="row justify-content-center mb-5  mt-2" style="padding-left: 2.0rem!important;
+    padding-right: 2.0rem!important;">
       <div class="col-lg-3 mx-3 my-1 border border-1 rounded-1">
         <div class="row align-items-start">
           <div class="col-3 p-0">
@@ -455,35 +462,40 @@
             />
           </div>
           <div class="col-9 flex-column d-flex align-items-between">
-            <div class="div">
+            <div class="row mt-2">
               <a href="./ad.html" class="text-decoration-none">
                 <h4 class="ad-title">اسم الإعلان بالتفصيل</h4>
               </a>
             </div>
-            <div class="row align-items-end justify-content-start mt-4">
+            <div class="row align-items-end justify-content-start mt-4 mb-1">
               <div class="col-6">
                 <a href="./account_page.html" class="text-decoration-none">
-                  <p class="ad-owner">ابو عمرو</p>
+                  <h4 class="ad-owner">ابو عمرو</h4>
                 </a>
                 <div
-                  class="d-flex flex-row align-items-center justify-content-start"
+                  class="d-flex flex-row align-items-end justify-content-start"
                 >
-                  <img
+                  <!-- <img
                     src="./assets/images/icons/img_20220905_020657823.png"
                     alt=""
                     class="ad-location"
-                  />
-                  <h6>عدن</h6>
+                  /> -->
+                  <h4 class="text-blue">
+                    <span
+                      ><i class="fa fas fa-map-marker-alt text-blue"></i
+                    ></span>
+                    عدن
+                  </h6>
                 </div>
               </div>
               <div class="col-6">
                 <div class="d-flex flex-row align-items-center">
-                  <img
+                  <!-- <img
                     src="./assets/images/icons/img_20220905_024311291.png"
                     alt=""
                     class="ad-location"
-                  />
-                  <h6 class="text-secondary">قبل 4 ساعات</h6>
+                  /> -->
+                  <h6 class="text-secondary"><span class="fa far fa-clock text-blue"></span> قبل 4 ساعات</h6>
                 </div>
               </div>
             </div>
@@ -500,33 +512,40 @@
             />
           </div>
           <div class="col-9 flex-column d-flex align-items-between">
-            <div class="div">
+            <div class="row mt-2">
               <a href="./ad.html" class="text-decoration-none">
                 <h4 class="ad-title">اسم الإعلان بالتفصيل</h4>
               </a>
             </div>
-            <div class="row align-items-end justify-content-start mt-4">
+            <div class="row align-items-end justify-content-start mt-4 mb-1">
               <div class="col-6">
-                <p class="ad-owner">ابو عمرو</p>
+                <a href="./account_page.html" class="text-decoration-none">
+                  <h4 class="ad-owner">ابو عمرو</h4>
+                </a>
                 <div
-                  class="d-flex flex-row align-items-center justify-content-start"
+                  class="d-flex flex-row align-items-end justify-content-start"
                 >
-                  <img
+                  <!-- <img
                     src="./assets/images/icons/img_20220905_020657823.png"
                     alt=""
                     class="ad-location"
-                  />
-                  <h6>عدن</h6>
+                  /> -->
+                  <h4 class="text-blue">
+                    <span
+                      ><i class="fa fas fa-map-marker-alt text-blue"></i
+                    ></span>
+                    عدن
+                  </h6>
                 </div>
               </div>
               <div class="col-6">
                 <div class="d-flex flex-row align-items-center">
-                  <img
+                  <!-- <img
                     src="./assets/images/icons/img_20220905_024311291.png"
                     alt=""
                     class="ad-location"
-                  />
-                  <h6 class="text-secondary">قبل 4 ساعات</h6>
+                  /> -->
+                  <h6 class="text-secondary"><span class="fa far fa-clock text-blue"></span> قبل 4 ساعات</h6>
                 </div>
               </div>
             </div>
@@ -543,48 +562,55 @@
             />
           </div>
           <div class="col-9 flex-column d-flex align-items-between">
-            <div class="div">
+            <div class="row mt-2">
               <a href="./ad.html" class="text-decoration-none">
                 <h4 class="ad-title">اسم الإعلان بالتفصيل</h4>
               </a>
             </div>
-            <div class="row align-items-end justify-content-start mt-4">
+            <div class="row align-items-end justify-content-start mt-4 mb-1">
               <div class="col-6">
-                <p class="ad-owner">ابو عمرو</p>
+                <a href="./account_page.html" class="text-decoration-none">
+                  <h4 class="ad-owner">ابو عمرو</h4>
+                </a>
                 <div
-                  class="d-flex flex-row align-items-center justify-content-start"
+                  class="d-flex flex-row align-items-end justify-content-start"
                 >
-                  <img
+                  <!-- <img
                     src="./assets/images/icons/img_20220905_020657823.png"
                     alt=""
                     class="ad-location"
-                  />
-                  <h6>عدن</h6>
+                  /> -->
+                  <h4 class="text-blue">
+                    <span
+                      ><i class="fa fas fa-map-marker-alt text-blue"></i
+                    ></span>
+                    عدن
+                  </h6>
                 </div>
               </div>
               <div class="col-6">
                 <div class="d-flex flex-row align-items-center">
-                  <img
+                  <!-- <img
                     src="./assets/images/icons/img_20220905_024311291.png"
                     alt=""
                     class="ad-location"
-                  />
-                  <h6 class="text-secondary">قبل 4 ساعات</h6>
+                  /> -->
+                  <h6 class="text-secondary"><span class="fa far fa-clock text-blue"></span> قبل 4 ساعات</h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-12 d-flex justify-content-center mb-5">
-        <button type="button" class="text-white border-0 rounded-1 see_more">
+      <div class="col-12 d-flex justify-content-center mb-5 mt-4">
+        <button type="button" class="text-white border-0 rounded-1 see_more h4 background-blue" style="width: 17rem;font-size: 1.1rem;">
           <span><i class="fa-solid fa-arrow-down mr-1"></i></span>
           مشاهدة المزيد من الاعلانات
         </button>
       </div>
     </div>
 
-    <footer class="d-lg-none position-fixed bottom-0 w-100 mb-1">
+    <footer class="d-lg-none position-fixed bottom-0 w-100 mb-1 bg-white">
       <div class="row justify-content-center">
         <div
           class="col flex flex-column justify-content-center align-items-center"
@@ -604,7 +630,7 @@
               alt=""
               class="footer-icon"
             />
-            <h6 class="align-self-center footer-text text-dark">الرئيسية</h6>
+            <h6 class="align-self-center footer-text " style="color: black;">الرئيسية</h6>
           </a>
         </div>
         <div class="col-6 col-xs-6 col-md-6 col-sm-6" style="padding-right: 0">
@@ -621,7 +647,7 @@
               ></span>
               <input
                 type="submit"
-                value="انشئ اعلانك"
+                value="انشر اعلانك"
                 class="btn btn-lg left text-white btn-search"
               />
             </div>
@@ -635,7 +661,7 @@
               alt=""
               class="footer-icon"
             />
-            <h6 class="align-self-center footer-text text-dark">حسابي</h6>
+            <h6 class="align-self-center footer-text " style="color: black;">حسابي</h6>
           </a>
         </div>
       </div>
