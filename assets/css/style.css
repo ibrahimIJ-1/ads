@@ -1,22 +1,25 @@
 @font-face {
-  font-family: "Helvetica";
-  src: url("../fonts/helv.ttf");
+  font-family: "Helvetica neue";
+  src: url("../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf");
 }
 body {
   padding: 3px;
   letter-spacing: 0.01em;
   font-weight: bold !important;
 }
+
 h4 {
   font-weight: bold !important;
 }
+
 h6 {
   font-weight: bold !important;
 }
+
 * {
   text-align: right;
   font: inherit;
-  font-family: Helvetica;
+  font-family: "Helvetica neue";
 }
 
 .navbar {
