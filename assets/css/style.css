@@ -1,11 +1,18 @@
 @font-face {
   font-family: "Helvetica";
-  src: url("../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf");
+  src: url("../fonts/helv.ttf");
 }
 body {
   padding: 3px;
+  letter-spacing: 0.01em;
+  font-weight: bold !important;
 }
-
+h4 {
+  font-weight: bold !important;
+}
+h6 {
+  font-weight: bold !important;
+}
 * {
   text-align: right;
   font: inherit;
@@ -263,9 +270,9 @@ input {
 }
 
 .ad-owner_name {
-  color: #1dbee5;
-  font-size: large;
-  font-weight: 600;
+  color: #4e92d4;
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 .ad-owner_img {
   width: 50px;
@@ -280,16 +287,18 @@ input {
 }
 
 .ad-owner_icon {
-  width: 24px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background: transparent;
 }
 
 .ad-owner_button {
   color: black;
   border: 2px solid #306f7e;
-  font-size: 16px;
-  width: 128px;
+  font-size: 17px;
+  font-weight: bolder;
+  width: 150px;
+  height: 45px;
 }
 
 .profile-owner_button {
@@ -304,7 +313,7 @@ input {
 }
 
 .ad-title {
-  color: #306f7e;
+  color: #167388;
   font-weight: 600;
   font-size: 22px;
 }
@@ -337,8 +346,8 @@ input {
 }
 
 .ad-properties_check {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 }
 .comment {
   border-bottom: 1px solid #9e9e9e;
